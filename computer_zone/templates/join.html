@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Join a Course - Computer Zone</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>Enroll Now</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/courses">Courses</a>
+      <a href="/join">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <h2>Fill the Form to Join a Course</h2>
+      <form method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+  <option value="" disabled selected>Select a course</option>
+  <option>Web Development (Frontend & Backend)</option>
+  <option>Artificial Intelligence</option>
+  <option>Machine Learning</option>
+  <option>Data Science</option>
+  <option>Data Analysis</option>
+  <option>Game Development</option>
+  <option>Software Development</option>
+  <option>App Development</option>
+  <option>Cybersecurity</option>
+  <option>ADCA</option>
+  <option>Tally Prime</option>
+  <option>Video Editing</option>
+</select>
+
+
+        <button type="submit">Join Course</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

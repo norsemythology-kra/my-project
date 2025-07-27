@@ -1,0 +1,154 @@
+<!-- templates/courses.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses - Computer Zone</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f4f6;
+      color: #333;
+    }
+
+    header {
+      background-color: #0c2852;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .course-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .course-card:hover {
+      transform: scale(1.03);
+    }
+
+    .course-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #0c2852;
+    }
+
+    .course-desc {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      background: #0c2852;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Courses</h1>
+    <p>Explore the future-ready courses offered at Computer Zone</p>
+  </header>
+
+  <div class="container">
+    <div class="course-grid">
+
+      <div class="course-card">
+        <div class="course-title">Web Development</div>
+        <div class="course-desc">Learn both Frontend and Backend development using HTML, CSS, JavaScript, React, Node.js, Flask, and more.</div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-title">Artificial Intelligence (AI)</div>
+        <div class="course-desc">Explore how machines can simulate human intelligence and build intelligent systems with Python and AI libraries.</div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-title">Machine Learning</div>
+        <div class="course-desc">Dive into predictive models and algorithms like regression, classification, and neural networks.</div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-title">Data Science</div>
+        <div class="course-desc">Analyze, visualize, and derive insights from data using Python, Pandas, NumPy, and real-world projects.</div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-title">Data Analysis</div>
+        <div class="course-desc">Master Excel, Power BI, SQL, and Python to analyze and present meaningful data insights.</div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-title">Game Development</div>
+        <div class="course-desc">Build 2D and 3D games using Unity, Unreal Engine, or Python with Pygame and Godot.</div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-title">Software Development</div>
+        <div class="course-desc">Design, develop, and maintain software applications with C, C++, Java, Python, and more.</div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-title">App Development</div>
+        <div class="course-desc">Create Android & iOS apps using Flutter, React Native, Java, or Kotlin from scratch.</div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-title">Cybersecurity</div>
+        <div class="course-desc">Protect systems from cyber threats, learn ethical hacking, network security, and more.</div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-title">ADCA</div>
+        <div class="course-desc">"Advanced Diploma in Computer Applications. A Complete Career-Oriented Course in Office Tools, Programming, Internet, and Digital Skills".</div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-title">Tally Prime</div>
+        <div class="course-desc">"Professional Certification in Tally Prime. Complete Training in Accounting, GST, Inventory, Payroll, and Business Management Software".</div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-title">Video Editing</div>
+        <div class="course-desc">"Advanced Video Editing Course. Learn to Create Stunning Videos with Editing, Motion Graphics, Sound Syncing, and Special Effects".</div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Computer Zone | All rights reserved
+  </footer>
+
+</body>
+</html>
